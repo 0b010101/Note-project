@@ -1,0 +1,14 @@
+body {
+    font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3b4669;
+}
+
+.bkg {
+    background-image: url("../bckg.jpg");
+}
+
+.navigation, .list-notes, .note-contain {
+    height: 720px;
+}
+
+/*rgb: 248 19 118*/
