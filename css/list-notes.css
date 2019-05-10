@@ -69,13 +69,19 @@
     overflow: auto;
 }
 
+.list-notes-contain-autosize {
+    padding: 0px;
+}
+
 .tab-notes {
     width: 226px;
+    max-width: 226px;
     height: 64px;
     text-decoration: none;
     color: #3b4669;
     border-bottom: 1px solid #e6e8f1;
     padding: 10px;
+    display: block;
 }
 .tab-notes:hover {
     text-decoration: none;
