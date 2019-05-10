@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/list-notes.css">
@@ -19,7 +20,18 @@
         <div class="col-md-5">
             <div class="row">
                 <div class="col-md-6 navigation">
-    цацкауаку
+                    <div class="col-md-12 wrap-navigation">
+                        <div class="row cls-min-btn">
+                            <div title="close" class="close" id='close-btn'>
+                                <a class="closebutton" href="#"><span><strong></strong></span></a>
+                                <!-- close button link -->
+                            </div>
+                            <div title="minimize" class="minimize" id="min-btn">
+                                <a class="minimizebutton" href="#"><span><strong></strong></span></a>
+                                <!-- minimize button link -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 list-notes">
                     <div class="row list-notes-contain">
@@ -55,7 +67,15 @@
                         </div>
                     </div>
                     <div class="row new-note">
-                        <a href="#" class="btn-new-note" role="button" aria-pressed="true"><div class="bind-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg><div>New Note</div></div></a>
+                        <a href="#" class="btn-new-note" role="button" aria-pressed="true">
+                            <div class="bind-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0V0z"/>
+                                    <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                </svg>
+                                <div>New Note</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -63,19 +83,79 @@
         <div class="col-md-7 note-contain">
             <div class="col-md-12">
                 <div class="row toolbar-panel">
-
+                    <div class="col-md-9 note-info">
+                        <div class="note-info-date">
+                            Wednesday, 14:01
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z"/>
+                            <path d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                        </svg>
+                        <div class="note-info-namefolder">
+                            in Recipes
+                        </div>
+                    </div>
+                    <div class="col-md-3 manage-buttons">
+                        <a href="#" class="star-button" role="button" aria-pressed="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" d="M0 0h24v24H0V0z"/>
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="delete-button" role="button" aria-pressed="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" d="M0 0h24v24H0V0z"/>
+                                <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="dots-button" role="button" aria-pressed="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" d="M0 0h24v24H0V0z"/>
+                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="row note-text">
-
+                    <div class="col-md-12 wrap-note-text">
+                        <div class="row">
+                            <div class="col-md-12 wrap-note-header">
+                                Head title
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 wrap-note-contain-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur expedita in ipsam magnam maxime repellat soluta unde. Ab adipisci fuga magnam obcaecati, omnis qui quia rem sapiente ullam vel vero!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem dicta distinctio, est eum in minus nulla obcaecati pariatur quisquam sint, tempora temporibus voluptas. Aperiam dicta error iste veniam vero.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cum cupiditate deleniti deserunt dolorum enim excepturi facere ipsa, iure molestiae nisi odio omnis pariatur repudiandae sapiente sint sunt veniam vitae?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugiat necessitatibus non odit officia quibusdam, quidem quos ullam vel. Consequatur cupiditate est itaque molestiae, quaerat qui ratione vero? Eaque, eum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at dolorum eaque eius enim esse expedita id impedit laboriosam nemo, non optio quibusdam repudiandae rerum sapiente tempore ullam velit voluptates!
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus itaque laudantium, officia reiciendis temporibus totam voluptas voluptates! Doloremque eveniet id praesentium tempore. Ab dicta eius, fugit rerum sed voluptas.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus itaque laudantium, officia reiciendis temporibus totam voluptas voluptates! Doloremque eveniet id praesentium tempore. Ab dicta eius, fugit rerum sed voluptas.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus itaque laudantium, officia reiciendis temporibus totam voluptas voluptates! Doloremque eveniet id praesentium tempore. Ab dicta eius, fugit rerum sed voluptas.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus itaque laudantium, officia reiciendis temporibus totam voluptas voluptates! Doloremque eveniet id praesentium tempore. Ab dicta eius, fugit rerum sed voluptas.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus itaque laudantium, officia reiciendis temporibus totam voluptas voluptates! Doloremque eveniet id praesentium tempore. Ab dicta eius, fugit rerum sed voluptas.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus itaque laudantium, officia reiciendis temporibus totam voluptas voluptates! Doloremque eveniet id praesentium tempore. Ab dicta eius, fugit rerum sed voluptas.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus itaque laudantium, officia reiciendis temporibus totam voluptas voluptates! Doloremque eveniet id praesentium tempore. Ab dicta eius, fugit rerum sed voluptas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="js/close-min.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

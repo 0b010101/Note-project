@@ -6,7 +6,7 @@ function createWindow () {
     win = new BrowserWindow({ width: 1200, height: 720, frame: false, transparent: true, resizable: true, });
 
     win.loadFile('index.html');
-    win.webContents.openDevTools();
+    //win.webContents.openDevTools();
 
     win.on('closed', () => {
         win = null;

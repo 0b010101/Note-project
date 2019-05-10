@@ -17,7 +17,7 @@
 
 .bind-btn {
     display: block;
-    margin: 4px 0 0 40px;
+    margin: 4px 0 0 0;
 }
 
 .btn-new-note {
@@ -30,6 +30,7 @@
     cursor: pointer;
     font-weight: 400;
     margin: auto 25px auto 25px;
+    text-align: center;
 }
 
 .btn-new-note:hover {

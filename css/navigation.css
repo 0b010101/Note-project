@@ -2,4 +2,38 @@
     background-color: white;
     opacity: 0.7;
     /*filter: blur(10px);*/
+    padding: 0px;
+}
+
+.navigation .wrap-navigation {
+    padding: 0px;
+}
+
+.navigation .wrap-navigation .cls-min-btn {
+    margin: 0px;
+    padding: 13px;
+    height: 40px;
+}
+
+.navigation .cls-min-btn .close {
+    background: #f81376;
+    font-size: 9pt;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #f81376;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+}
+
+.navigation .cls-min-btn .minimize {
+    background: #3b4669;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 4px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #3b4669;
+    border-radius: 50%;
+    display: inline-block;
 }
