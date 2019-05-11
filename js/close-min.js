@@ -3,9 +3,6 @@ document.getElementById("min-btn").addEventListener("click", function(e) {
     var window = remote.getCurrentWindow();
     window.minimize();
 });
-setTimeout(function () {
-    remote.getCurrentWindow().close();
-}, 3000);
 
 document.getElementById("close-btn").addEventListener("click", function(e) {
     var window = remote.getCurrentWindow();

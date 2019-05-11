@@ -5,8 +5,14 @@
     padding: 0px;
 }
 
+.navigation .row1-navigation {
+    margin: 0px;
+    width: 250px;
+}
+
 .navigation .wrap-navigation {
     padding: 0px;
+    height: 40px;
 }
 
 .navigation .wrap-navigation .cls-min-btn {
@@ -35,5 +41,211 @@
     height: 14px;
     border: 1px solid #3b4669;
     border-radius: 50%;
+    display: inline-block;
+}
+
+.navigation .row2-account {
+    width: 250px;
+    margin: 0px;
+}
+
+.navigation .row2-account .account {
+    height: 60px;
+    padding-left: 25px;
+    padding-top: 14px;
+}
+
+.navigation .row2-account .account .link-account {
+    text-decoration: none;
+    color: #3b4669;
+    font-weight: 500;
+}
+.navigation .row2-account .account .link-account:hover {
+    text-decoration: none;
+    color: #3b4669;
+    font-weight: 500;
+}
+
+.navigation .row2-account .account .link-account .name-account {
+    display: inline-block;
+}
+
+.navigation .row2-account .account .link-account svg {
+    fill: #3b4669;
+    display: inline-block;
+}
+
+.navigation .row2-account .account .link-account svg:first-child {
+    width: 40px;
+    height: 40px;
+}
+
+.navigation .row3-search {
+    width: 250px;
+    margin: 0px;
+}
+
+.navigation .row3-search .search {
+    height: 60px;
+    padding-left: 25px;
+}
+
+.has-search {
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+
+.has-search .form-control {
+    padding-left: 10px;
+    width: 200px;
+ }
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.navigation .row4-categories {
+    width: 250px;
+    margin: 0px;
+}
+
+.navigation .row4-categories .categories {
+    height: 130px;
+    padding-top: 10px;
+}
+
+.navigation .row4-categories .label-categories {
+    height: 30px;
+}
+
+.navigation .row4-categories .inner-label-categories {
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9197aa;
+}
+
+.navigation .row4-categories .selected-category {
+    height: 30px;
+    padding-left: 0px;
+}
+
+.navigation .row4-categories .selected-category a.inner-selected-category {
+    padding-left: 22px;
+}
+
+.navigation .row4-categories .selected-category a.inner-selected-category:hover {
+    text-decoration: none;
+}
+
+.navigation .row4-categories .selected-category a.inner-selected-category svg {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    padding-bottom: 4px;
+    fill: #3b4669;
+}
+
+.navigation .row4-categories .selected-category a.inner-selected-category .text-category {
+    display: inline-block;
+    color: #3b4669;
+}
+
+.navigation .row5-folders {
+    width: 250px;
+    margin: 0px;
+}
+
+.navigation .row5-folders .folders {
+    height: 360px;
+    padding-top: 10px;
+}
+
+.navigation .row5-folders .label-folders {
+    height: 30px;
+}
+
+.navigation .row5-folders .inner-label-folders {
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9197aa;
+}
+.navigation .row5-folders .wrap-folders {
+    height: 330px;
+    overflow: auto;
+}
+
+.navigation .row5-folders .selected-folder {
+    height: 30px;
+    padding-left: 0px;
+}
+
+.navigation .row5-folders .selected-folder a.inner-selected-folder {
+    padding-left: 22px;
+}
+
+.navigation .row5-folders .selected-folder a.inner-selected-folder:hover {
+    text-decoration: none;
+}
+
+.navigation .row5-folders .selected-folder a.inner-selected-folder svg {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    padding-bottom: 4px;
+    fill: #3b4669;
+}
+
+.navigation .row5-folders .selected-folder a.inner-selected-folder .text-category {
+    display: inline-block;
+    color: #3b4669;
+}
+
+.new-folder {
+    height: 70px;
+    width: 250px;
+    margin: 0;
+}
+
+.bind-btn {
+    display: block;
+    margin: 4px 0 0 0;
+}
+
+.btn-new-folder {
+    width: 200px;
+    height: 35px;
+    color: #3b4669;
+    cursor: pointer;
+    font-weight: 400;
+    margin: auto 25px auto 0;
+    padding-left: 25px;
+}
+
+.btn-new-folder:hover {
+    color: #3b4669;
+}
+.bind-btn-folder {
+    padding-top: 5px;
+}
+
+.btn-new-folder svg {
+    display: inline-block;
+    background-size: contain;
+    cursor: pointer;
+    height: 24px;
+    fill: #3b4669;
+    padding-right: 5px;
+}
+.btn-new-folder div {
     display: inline-block;
 }
