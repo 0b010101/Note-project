@@ -1,6 +1,5 @@
 .list-notes {
-    background-color: white;
-    opacity: 0.9;
+    background-color: rgba(255, 255, 255, .9);
     /*filter: blur(10px);*/
 }
 

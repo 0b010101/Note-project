@@ -1,7 +1,5 @@
 .navigation {
-    background-color: white;
-    opacity: 0.7;
-    /*filter: blur(10px);*/
+    background-color: rgba(255, 255, 255, .7);
     padding: 0px;
 }
 
@@ -136,6 +134,7 @@
 .navigation .row4-categories .selected-category {
     height: 30px;
     padding-left: 0px;
+    padding-top: 4px;
 }
 
 .navigation .row4-categories .selected-category a.inner-selected-category {
@@ -187,6 +186,7 @@
 .navigation .row5-folders .selected-folder {
     height: 30px;
     padding-left: 0px;
+    padding-top: 4px;
 }
 
 .navigation .row5-folders .selected-folder a.inner-selected-folder {
@@ -248,4 +248,21 @@
 }
 .btn-new-folder div {
     display: inline-block;
+}
+
+.navigation .row.select-item {
+    border-left: 4px solid #f81376;
+}
+
+.navigation .row.select-item .selected-category .inner-selected-category div {
+    color: #f81376;
+}
+.navigation .row.select-item .selected-category .inner-selected-category svg {
+    fill: #f81376;
+}
+.navigation .row.select-item .selected-folder .inner-selected-folder div {
+    color: #f81376;
+}
+.navigation .row.select-item .selected-folder .inner-selected-folder svg {
+    fill: #f81376;
 }

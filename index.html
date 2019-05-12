@@ -23,7 +23,7 @@
                     <div class="row row1-navigation">
                         <div class="col-md-12 wrap-navigation">
                             <div class="row cls-min-btn">
-                                <div title="close" class="close" id='close-btn' onclick="cls()">
+                                <div title="close" class="close" id='close-btn'>
                                     <a class="closebutton" href="#"><span><strong></strong></span></a>
                                     <!-- close button link -->
                                 </div>
@@ -58,7 +58,7 @@
                                     CATEGORIES
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row select-item">
                                 <div class="col-md-12 selected-category">
                                     <a href="#" class="inner-selected-category">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M16 4H4c-1.1 0-2 .9-2 2v12.01c0 1.1.9 1.99 2 1.99h16c1.1 0 2-.9 2-2v-8l-6-6zM4 18.01V6h11v5h5v7.01H4z"/></svg>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 wrap-folders">
-                                    <div class="row">
+                                    <div class="row select-item">
                                         <div class="col-md-12 selected-folder">
                                             <a href="#" class="inner-selected-folder">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/></svg>
@@ -159,34 +159,6 @@
                 <div class="col-md-6 list-notes">
                     <div class="row list-notes-contain">
                         <div class="col-md-12 list-notes-contain-autosize">
-                            <a href="#" class="tab-notes">
-                                <div class="head-note">Personal notes</div>
-                                <div class="date-note">Yesterday, 19:31 in Personal</div>
-                            </a>
-                            <a href="#" class="tab-notes selected">
-                                <div class="head-note">Cupcake recipe</div>
-                                <div class="date-note">Wednesday, 14:01 in Recipes</div>
-                            </a>
-                            <a href="#" class="tab-notes">
-                                <div class="head-note">My bank accounts</div>
-                                <div class="date-note">2018. 04. 21. 05:16 in Personal</div>
-                            </a>
-                            <a href="#" class="tab-notes">
-                                <div class="head-note">Christmas wishlist</div>
-                                <div class="date-note">2018. 03. 20. 09:45 in Personal</div>
-                            </a>
-                            <a href="#" class="tab-notes">
-                                <div class="head-note">From Tesco</div>
-                                <div class="date-note">2018. 03. 19. 18:37 in Shopping</div>
-                            </a>
-                            <a href="#" class="tab-notes">
-                                <div class="head-note">Project todos</div>
-                                <div class="date-note">2018. 01. 05. 11:13 in Work Stuff</div>
-                            </a>
-                            <a href="#" class="tab-notes">
-                                <div class="head-note">Matcha cookies</div>
-                                <div class="date-note">2017. 05. 24. 20:22 in Recipes</div>
-                            </a>
                             <a href="#" class="tab-notes">
                                 <div class="head-note">Personal notes</div>
                                 <div class="date-note">Yesterday, 19:31 in Personal</div>
@@ -296,13 +268,6 @@
         </div>
     </div>
 </div>
-<script>
-    function cls() {
-        const remote = require('electron').remote;
-        var window = remote.getCurrentWindow();
-        window.close();
-    }
-</script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"
